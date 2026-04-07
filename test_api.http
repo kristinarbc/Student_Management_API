@@ -1,0 +1,27 @@
+### 1. Svi studenti
+GET http://127.0.0.1:5000/studenti
+
+### 2. Jedan student
+GET http://127.0.0.1:5000/studenti/1
+
+### 3. Dodaj studenta
+POST http://127.0.0.1:5000/studenti
+Content-Type: application/json
+
+{
+  "ime": "Marko",
+  "prezime": "Marković",
+  "indeks": "IT-123/2023",
+  "ocena": 9.5
+}
+
+### 4. Izmeni studenta
+PUT http://127.0.0.1:5000/studenti/1
+Content-Type: application/json
+
+{
+  "ocena": 10.0
+}
+
+### 5. Obrisi studenta
+DELETE http://127.0.0.1:5000/studenti/1
